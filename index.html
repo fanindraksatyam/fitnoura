@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitnoura | Immune Support</title>
+  
+  <!-- Tailwind CSS via CDN for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons via CDN for standard icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .hide-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#f8fafc] font-sans text-[#0f172a] overflow-x-hidden antialiased">
+
+  <!-- 2. Header/Navbar -->
+  <header class="w-full bg-white/95 backdrop-blur-md flex items-center justify-between px-6 lg:px-12 py-5 sticky top-0 z-50 border-b border-indigo-100 shadow-sm">
+    <div class="flex items-center space-x-2 cursor-pointer">
+      <div class="bg-indigo-600 text-white w-10 h-10 flex items-center justify-center rounded-lg font-black italic text-xl shadow-md">fn</div>
+      <div class="text-[#0f172a] text-2xl font-black tracking-tight">Fitnoura</div>
+    </div>
+
+    <nav class="hidden lg:flex items-center space-x-8 text-[14px] font-bold text-slate-600 tracking-wide uppercase">
+      <a href="#" class="hover:text-sky-500 transition-colors">Shop</a>
+      <a href="#" class="hover:text-sky-500 transition-colors">The Science</a>
+      <a href="#" class="hover:text-sky-500 transition-colors">FAQs</a>
+      <a href="#" class="hover:text-sky-500 transition-colors">Our Story</a>
+    </nav>
+
+    <div class="flex items-center space-x-5">
+      <button class="hidden sm:block bg-indigo-600 hover:bg-indigo-700 text-white text-[14px] font-bold px-8 py-3 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+        SHOP NOW
+      </button>
+      <button class="text-slate-700 hover:text-sky-500 transition-colors relative">
+        <i data-lucide="shopping-bag" class="w-6 h-6" stroke-width="1.5"></i>
+        <span class="absolute -top-1 -right-1 bg-sky-500 w-4 h-4 rounded-full border-2 border-white"></span>
+      </button>
+      <button class="lg:hidden text-slate-700">
+        <i data-lucide="menu" class="w-7 h-7"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- 3. Modern Dark Hero Section -->
+  <main class="relative bg-indigo-950 text-white pt-20 pb-32 px-6 lg:px-12 overflow-hidden">
+    <!-- Decorative background elements -->
+    <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-sky-500/20 rounded-full blur-[120px] pointer-events-none transform translate-x-1/3 -translate-y-1/3"></div>
+    <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-600/30 rounded-full blur-[100px] pointer-events-none transform -translate-x-1/2 translate-y-1/3"></div>
+
+    <div class="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+      
+      <!-- Left Text -->
+      <div class="max-w-[600px]">
+        <div class="inline-block mb-6">
+          <p class="text-sky-300 text-[12px] font-bold border border-sky-400/30 bg-sky-500/10 px-4 py-1.5 rounded-full uppercase tracking-widest flex items-center">
+            <i data-lucide="shield-check" class="w-4 h-4 mr-2"></i> Enteric-Coated • 95%+ Pure
+          </p>
+        </div>
+        
+        <h1 class="text-[48px] sm:text-[60px] leading-[1.1] font-black text-white mb-6 tracking-tight">
+          Advanced Lactoferrin for Gut & Immune Health <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400"> - Delivered Where It Matters</span>
+        </h1>
+        
+        <p class="text-[18px] text-indigo-100/80 mb-10 leading-[1.7] font-medium">
+          300mg of 95%+ pure lactoferrin in enteric-coated capsules designed to release in the intestines for optimal absorption and effectiveness.
+        </p>
+      </div>
+
+      <!-- Right Image/Graphic -->
+      <div class="relative h-full min-h-[400px] flex items-center justify-center lg:justify-end">
+        <div class="relative w-full max-w-[500px]">
+          <!-- Abstract sleek layout instead of exact cards to give a "new look" -->
+          <div class="glass-panel p-4 rounded-2xl relative z-20 transform translate-y-8 -translate-x-8 shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1584362917165-526a968579e8?auto=format&fit=crop&q=80&w=600" alt="Pure Lactoferrin" class="rounded-xl w-full h-[250px] object-cover opacity-90 mix-blend-screen" />
+            <div class="absolute bottom-8 left-8 bg-indigo-950/90 text-white px-4 py-2 rounded-lg font-bold shadow-lg border border-indigo-500/30 backdrop-blur-md flex items-center">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-sky-400 mr-2"></i> Pure Extract
+            </div>
+          </div>
+          
+          <div class="glass-panel p-4 rounded-2xl absolute top-0 right-0 w-[80%] z-10 shadow-2xl transform translate-x-4 -translate-y-4">
+            <img src="https://images.unsplash.com/photo-1550572017-edb3df1317d7?auto=format&fit=crop&q=80&w=600" alt="Balance" class="rounded-xl w-full h-[200px] object-cover opacity-80 mix-blend-screen" />
+             <div class="absolute top-8 right-8 bg-sky-500 text-indigo-950 px-3 py-1 rounded-full text-xs font-black shadow-lg">
+              95%+ Potency
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 4. Dedicated Product Showcase (New Look) -->
+  <section class="py-24 bg-[#f8fafc] px-6">
+    <div class="max-w-[1200px] mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-sky-600 font-bold tracking-widest uppercase text-sm mb-2">Our Formulas</h2>
+        <h3 class="text-3xl md:text-4xl font-black text-indigo-950">Choose Which Supplement You Need</h3>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10 lg:gap-16 max-w-[1000px] mx-auto">
+        <!-- Product 1 -->
+        <div class="bg-white rounded-[2rem] p-8 shadow-sm border border-indigo-50 flex flex-col hover:shadow-xl transition-all duration-300 group">
+          <div class="bg-indigo-50 rounded-2xl h-[240px] flex items-center justify-center p-6 mb-8 relative overflow-hidden group-hover:bg-indigo-100 transition-colors">
+            <span class="absolute top-4 left-4 bg-white text-indigo-900 text-xs font-black px-3 py-1 rounded-full shadow-sm">Core Formula</span>
+            <img src="https://images.unsplash.com/photo-1584362917165-526a968579e8?auto=format&fit=crop&q=80&w=600" alt="Pure Lactoferrin" class="w-full h-full object-cover rounded-xl mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <h4 class="text-2xl font-black text-indigo-950 mb-2">FitNoura Lactoferrin 300mg</h4>
+          <p class="text-sky-600 font-black text-xl mb-4">$59.95</p>
+          <p class="text-slate-600 mb-8 flex-grow leading-relaxed">A premium lactoferrin supplement formulated to support gut health, immune balance, and iron regulation using advanced delayed-release technology.</p>
+          <button class="w-full bg-indigo-950 hover:bg-indigo-800 text-white font-bold py-4 rounded-xl transition-colors">Buy on Amazon</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-white rounded-[2rem] p-8 shadow-sm border border-indigo-50 flex flex-col hover:shadow-xl transition-all duration-300 group">
+          <div class="bg-sky-50 rounded-2xl h-[240px] flex items-center justify-center p-6 mb-8 relative overflow-hidden group-hover:bg-sky-100 transition-colors">
+            <span class="absolute top-4 left-4 bg-indigo-950 text-white text-xs font-black px-3 py-1 rounded-full shadow-sm">Coming Soon</span>
+            <img src="https://images.unsplash.com/photo-1550572017-edb3df1317d7?auto=format&fit=crop&q=80&w=600" alt="Balance" class="w-full h-full object-cover rounded-xl mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <h4 class="text-2xl font-black text-indigo-950 mb-2">FitNoura Pure Fisetin 500mg</h4>
+          <div class="flex items-center space-x-3 mb-4">
+            <p class="text-sky-600 font-black text-xl">$59.99</p>
+            <p class="text-slate-400 font-medium line-through decoration-slate-300">$79.99</p>
+          </div>
+          <p class="text-slate-600 mb-8 flex-grow leading-relaxed">A powerful antioxidant supplement designed to support cellular health and healthy aging. Formulated for daily use to promote overall wellness and vitality.</p>
+          <button class="w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-4 rounded-xl transition-colors">Notify Me</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Feature Grid (Modernized) -->
+  <section class="py-16 bg-white border-y border-indigo-50">
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="flex flex-col items-center text-center p-6 rounded-2xl hover:bg-indigo-50/50 transition-colors">
+          <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-4 text-indigo-600 transform rotate-3">
+            <i data-lucide="activity" class="w-8 h-8" stroke-width="1.5"></i>
+          </div>
+          <span class="font-bold text-indigo-950">Gut Health Support</span>
+<span class="text-sm text-slate-500 mt-1">Supports microbiome balance and digestive comfort</span>
+        </div>
+        <div class="flex flex-col items-center text-center p-6 rounded-2xl hover:bg-sky-50/50 transition-colors">
+          <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mb-4 text-sky-600 transform -rotate-3">
+            <i data-lucide="thermometer" class="w-8 h-8" stroke-width="1.5"></i>
+          </div>
+          <span class="font-bold text-indigo-950">Immune Function</span>
+<span class="text-sm text-slate-500 mt-1">Supports normal immune response</span>
+        </div>
+        <div class="flex flex-col items-center text-center p-6 rounded-2xl hover:bg-indigo-50/50 transition-colors">
+          <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-4 text-indigo-600 transform rotate-3">
+            <i data-lucide="shield-check" class="w-8 h-8" stroke-width="1.5"></i>
+          </div>
+          <span class="font-bold text-indigo-950">Iron Balance</span>
+<span class="text-sm text-slate-500 mt-1">Helps regulate iron absorption</span>
+        </div>
+        <div class="flex flex-col items-center text-center p-6 rounded-2xl hover:bg-sky-50/50 transition-colors">
+          <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mb-4 text-sky-600 transform -rotate-3">
+            <i data-lucide="flask-conical" class="w-8 h-8" stroke-width="1.5"></i>
+          </div>
+          <span class="font-bold text-indigo-950">Targeted Delivery</span>
+<span class="text-sm text-slate-500 mt-1">Enteric coating protects effectiveness</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Suboptimal Strategy (Redesigned as Dark/Split Section) -->
+  <section class="py-24 bg-indigo-950 px-6 text-white overflow-hidden relative">
+    <!-- Decor -->
+    <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-sky-500/10 rounded-full blur-[80px]"></div>
+
+    <div class="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+      <div class="order-2 lg:order-1">
+        <h2 class="text-[32px] sm:text-[42px] font-black mb-6 leading-tight">
+          Why <span class="text-sky-400">Absorption Matters</span>
+        </h2>
+        <p class="text-indigo-200 text-[18px] mb-10 leading-relaxed">
+          Not all lactoferrin supplements are delivered the same. Standard capsules may break down in stomach acid before reaching the intestines.
+          FitNoura uses enteric-coated capsules designed to protect lactoferrin and release it where your body can better utilize it.
+        </p>
+      </div>
+
+      <div class="order-1 lg:order-2 relative h-[400px] lg:h-full min-h-[500px] rounded-3xl overflow-hidden border-4 border-indigo-900 shadow-2xl">
+        <img src="https://images.unsplash.com/photo-1584362917165-526a968579e8?auto=format&fit=crop&q=80&w=800" alt="Pills" class="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-luminosity hover:mix-blend-normal transition-all duration-700" />
+        <div class="absolute inset-0 bg-gradient-to-t from-indigo-950 via-transparent to-transparent"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. How Fitnoura works (Clean White Section) -->
+  <section class="py-24 bg-white px-6">
+    <div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-16">
+      
+      <!-- Text Content First for new rhythm -->
+      <div class="w-full lg:w-1/2">
+        <h2 class="text-sky-600 font-bold tracking-widest uppercase text-sm mb-2">The Mechanism</h2>
+        <h3 class="text-[36px] sm:text-[44px] font-black text-indigo-950 mb-6 leading-tight">
+          How Lactoferrin Supports Your Body
+        </h3>
+        <p class="text-slate-600 mb-8 text-[18px] leading-relaxed">
+          Lactoferrin is a naturally occurring protein involved in immune defense and iron metabolism. It interacts with the gut environment and supports the body’s natural balance.
+        </p>
+        
+        <div class="bg-sky-50 border-l-4 border-sky-500 p-6 rounded-r-2xl mb-8">
+          <p class="font-bold text-indigo-900">FitNoura supports key biological functions through:</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="flex items-center space-x-3 bg-white border border-indigo-50 p-4 rounded-xl shadow-sm">
+            <div class="bg-indigo-100 p-1.5 rounded-lg text-indigo-600"><i data-lucide="check" class="w-4 h-4"></i></div>
+            <span class="font-bold text-sm text-indigo-950">Supports Gut Microbiome Balance</span>
+          </div>
+          <div class="flex items-center space-x-3 bg-white border border-indigo-50 p-4 rounded-xl shadow-sm">
+            <div class="bg-indigo-100 p-1.5 rounded-lg text-indigo-600"><i data-lucide="check" class="w-4 h-4"></i></div>
+            <span class="font-bold text-sm text-indigo-950">Supports Normal Immune Response</span>
+          </div>
+          <div class="flex items-center space-x-3 bg-white border border-indigo-50 p-4 rounded-xl shadow-sm">
+            <div class="bg-indigo-100 p-1.5 rounded-lg text-indigo-600"><i data-lucide="check" class="w-4 h-4"></i></div>
+            <span class="font-bold text-sm text-indigo-950">Helps Regulate Iron Absorption</span>
+          </div>
+          <div class="flex items-center space-x-3 bg-white border border-indigo-50 p-4 rounded-xl shadow-sm">
+            <div class="bg-indigo-100 p-1.5 rounded-lg text-indigo-600"><i data-lucide="check" class="w-4 h-4"></i></div>
+            <span class="font-bold text-sm text-indigo-950">Designed for Targeted Intestinal Delivery</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Refined Venn Diagram visualization -->
+      <div class="w-full lg:w-1/2 flex justify-center py-10 relative">
+        <div class="relative w-[360px] h-[360px]">
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[220px] h-[220px] rounded-full bg-indigo-100 mix-blend-multiply flex items-start justify-center pt-8 border-2 border-indigo-200">
+            <span class="text-[13px] font-bold text-indigo-900">Gut Health</span>
+          </div>
+          <div class="absolute top-1/2 -translate-y-1/2 left-0 w-[220px] h-[220px] rounded-full bg-sky-100 mix-blend-multiply flex items-center justify-start pl-8 border-2 border-sky-200">
+            <span class="text-[13px] font-bold text-indigo-900 max-w-[60px] leading-tight">Diet</span>
+          </div>
+          <div class="absolute top-1/2 -translate-y-1/2 right-0 w-[220px] h-[220px] rounded-full bg-indigo-50 mix-blend-multiply flex items-center justify-end pr-8 border-2 border-indigo-200">
+            <span class="text-[13px] font-bold text-indigo-900">Lifestyle</span>
+          </div>
+          <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[220px] h-[220px] rounded-full bg-sky-50 mix-blend-multiply flex items-end justify-center pb-8 border-2 border-sky-200">
+            <span class="text-[13px] font-bold text-indigo-900 max-w-[70px] text-center leading-tight">Environment</span>
+          </div>
+          
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-indigo-600 w-[160px] h-[160px] rounded-full shadow-2xl flex items-center justify-center border-4 border-white">
+            <span class="text-white font-black tracking-wide text-[16px] text-center px-4">Gut &<br>Immune Balance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Clinically Researched Ingredients (Redesigned Grid) -->
+  <section class="py-24 bg-sky-50 px-6 border-t border-sky-100">
+    <div class="max-w-[1200px] mx-auto">
+      <div class="text-center mb-16 max-w-[800px] mx-auto">
+        <h2 class="text-indigo-600 font-bold tracking-widest uppercase text-sm mb-2">The Label</h2>
+        <h3 class="text-[32px] sm:text-[40px] font-black text-indigo-950 leading-tight">
+          Backed by Scientific Research
+        </h3>
+      </div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+  <!-- Study 1 -->
+  <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-white hover:border-sky-200">
+    <div class="flex items-center space-x-4 mb-6">
+      <div class="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600">
+        <i data-lucide="shield-check" class="w-7 h-7"></i>
+      </div>
+      <div>
+        <h4 class="font-black text-[20px] text-indigo-950">Immune & Antimicrobial Activity</h4>
+        <span class="text-sky-600 font-bold text-sm">Peer-reviewed study</span>
+      </div>
+    </div>
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6352220/" target="_blank" class="text-sky-600 font-medium underline">
+      View Study →
+    </a>
+  </div>
+
+  <!-- Study 2 -->
+  <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-white hover:border-sky-200">
+    <div class="flex items-center space-x-4 mb-6">
+      <div class="w-14 h-14 bg-sky-50 rounded-2xl flex items-center justify-center text-sky-600">
+        <i data-lucide="activity" class="w-7 h-7"></i>
+      </div>
+      <div>
+        <h4 class="font-black text-[20px] text-indigo-950">Gut Microbiome Support</h4>
+        <span class="text-sky-600 font-bold text-sm">Clinical research</span>
+      </div>
+    </div>
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7284807/" target="_blank" class="text-sky-600 font-medium underline">
+      View Study →
+    </a>
+  </div>
+
+  <!-- Study 3 -->
+  <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-white hover:border-sky-200">
+    <div class="flex items-center space-x-4 mb-6">
+      <div class="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600">
+        <i data-lucide="droplet" class="w-7 h-7"></i>
+      </div>
+      <div>
+        <h4 class="font-black text-[20px] text-indigo-950">Iron Regulation & Absorption</h4>
+        <span class="text-sky-600 font-bold text-sm">Scientific study</span>
+      </div>
+    </div>
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5226638/" target="_blank" class="text-sky-600 font-medium underline">
+      View Study →
+    </a>
+  </div>
+
+  <!-- Study 4 -->
+  <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-white hover:border-sky-200">
+    <div class="flex items-center space-x-4 mb-6">
+      <div class="w-14 h-14 bg-sky-50 rounded-2xl flex items-center justify-center text-sky-600">
+        <i data-lucide="flame" class="w-7 h-7"></i>
+      </div>
+      <div>
+        <h4 class="font-black text-[20px] text-indigo-950">Inflammatory Response</h4>
+        <span class="text-sky-600 font-bold text-sm">Published research</span>
+      </div>
+    </div>
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3769699/" target="_blank" class="text-sky-600 font-medium underline">
+      View Study →
+    </a>
+  </div>
+
+</div>
+  </section>
+
+  <!-- 10. Testimonials (Redesigned as Modern Slider) -->
+  <section class="py-24 bg-white overflow-hidden relative">
+    <div class="max-w-[1200px] mx-auto px-6 mb-16 flex justify-between items-end">
+      <div>
+        <h2 class="text-sky-600 font-bold tracking-widest uppercase text-sm mb-2">Real Results</h2>
+        <h3 class="text-[32px] sm:text-[40px] font-black text-indigo-950 tracking-tight">Don't Just Take Our Word For It</h3>
+      </div>
+      <div class="hidden md:flex space-x-3">
+        <button id="scroll-left" class="w-12 h-12 rounded-full border-2 border-indigo-100 flex items-center justify-center text-indigo-600 hover:bg-indigo-50 hover:border-indigo-200 transition-all">
+          <i data-lucide="arrow-left" class="w-5 h-5"></i>
+        </button>
+        <button id="scroll-right" class="w-12 h-12 rounded-full border-2 border-indigo-100 flex items-center justify-center text-indigo-600 hover:bg-indigo-50 hover:border-indigo-200 transition-all">
+          <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+      
+    <div class="relative max-w-[1400px] mx-auto">
+      <div id="testimonials-container" class="flex gap-8 overflow-x-auto pb-12 snap-x snap-mandatory px-6 md:px-20 hide-scrollbar scroll-smooth">
+        
+        <!-- Testimonial -->
+        <div class="bg-slate-50 p-10 rounded-3xl min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-sky-500">
+          <div class="flex text-[#fbbf24] mb-6">
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          </div>
+          <h4 class="font-black text-[20px] text-indigo-950 mb-4">"Made all the difference"</h4>
+          <p class="text-slate-600 text-[16px] leading-[1.7] mb-8 flex-grow">"It corrected my bloating, fatigue and joint pain. I changed was taking these 2 caps morning and its made all the difference."</p>
+          <div class="flex items-center pt-6 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold mr-3">VB</div>
+            <div>
+              <div class="font-bold text-indigo-950">Verified Buyer</div>
+              <div class="text-sky-500 text-xs font-bold flex items-center"><i data-lucide="check-circle-2" class="w-3 h-3 mr-1"></i> Verified</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-10 rounded-3xl min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-indigo-600">
+          <div class="flex text-[#fbbf24] mb-6">
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          </div>
+          <h4 class="font-black text-[20px] text-indigo-950 mb-4">"The real deal"</h4>
+          <p class="text-slate-600 text-[16px] leading-[1.7] mb-8 flex-grow">"I've always been skeptical about most supplements, but Fitnoura is for real. Their detailed explanation about ingredients and delivery method instilled trust."</p>
+          <div class="flex items-center pt-6 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 font-bold mr-3">KJ</div>
+            <div>
+              <div class="font-bold text-indigo-950">Kathy J.</div>
+              <div class="text-sky-500 text-xs font-bold flex items-center"><i data-lucide="check-circle-2" class="w-3 h-3 mr-1"></i> Verified</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-10 rounded-3xl min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-sky-500">
+          <div class="flex text-[#fbbf24] mb-6">
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          </div>
+          <h4 class="font-black text-[20px] text-indigo-950 mb-4">"Customer for life"</h4>
+          <p class="text-slate-600 text-[16px] leading-[1.7] mb-8 flex-grow">"My sister in law swears by this. Within the first 2 weeks, my headaches and fatigue disappeared. Since then, zero new lesions. Hands down the most important addition."</p>
+          <div class="flex items-center pt-6 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold mr-3">DM</div>
+            <div>
+              <div class="font-bold text-indigo-950">Diane M.</div>
+              <div class="text-sky-500 text-xs font-bold flex items-center"><i data-lucide="check-circle-2" class="w-3 h-3 mr-1"></i> Verified</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-10 rounded-3xl min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-indigo-600">
+          <div class="flex text-[#fbbf24] mb-6">
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          </div>
+          <h4 class="font-black text-[20px] text-indigo-950 mb-4">"Finally some relief"</h4>
+          <p class="text-slate-600 text-[16px] leading-[1.7] mb-8 flex-grow">"I have multiple autoimmune issues and Fitnoura has put them all into remission. No more fatigue, no more pain, and my skin has cleared up. It's life-changing!"</p>
+          <div class="flex items-center pt-6 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 font-bold mr-3">MJ</div>
+            <div>
+              <div class="font-bold text-indigo-950">Maria J.</div>
+              <div class="text-sky-500 text-xs font-bold flex items-center"><i data-lucide="check-circle-2" class="w-3 h-3 mr-1"></i> Verified</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Supporting Your Health (Sky Blue Theme) -->
+  <section class="py-24 bg-sky-100 px-6 relative">
+    <div class="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-16 items-center">
+      
+      <div>
+        <h2 class="text-[36px] sm:text-[48px] font-black text-indigo-950 mb-6 leading-tight">
+          Supporting Your Health, <span class="text-sky-600">Long-Term.</span>
+        </h2>
+        
+        <div class="space-y-4">
+          <div class="bg-white p-6 rounded-2xl flex items-center shadow-sm">
+            <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 font-black text-xl mr-6">1</div>
+            <div>
+              <h4 class="font-bold text-indigo-950 text-lg">Order Fitnoura today</h4>
+              <p class="text-slate-500 text-sm">Get your immune system under control immediately.</p>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-2xl flex items-center shadow-sm">
+            <div class="w-12 h-12 bg-sky-50 rounded-xl flex items-center justify-center text-sky-600 font-black text-xl mr-6">2</div>
+            <div>
+              <h4 class="font-bold text-indigo-950 text-lg">Get Guidance & Protocols</h4>
+              <p class="text-slate-500 text-sm">Diet recommendations and up-to-date Autoimmune studies.</p>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-2xl flex items-center shadow-sm">
+            <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 font-black text-xl mr-6">3</div>
+            <div>
+              <h4 class="font-bold text-indigo-950 text-lg">Feedback Analysis</h4>
+              <p class="text-slate-500 text-sm">Follow up surveys to track your progress with our experts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative h-[600px] rounded-[3rem] overflow-hidden shadow-2xl">
+        <img src="https://images.unsplash.com/photo-1550572017-edb3df1317d7?auto=format&fit=crop&q=80&w=800" alt="Supplement" class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-indigo-900/20 mix-blend-multiply"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Guarantee Section (Dark Variant) -->
+  <section class="py-24 bg-indigo-950 text-white px-6">
+    <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center gap-16">
+      
+      <div class="w-full md:w-1/2 relative">
+         <div class="relative h-[500px] rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(14,165,233,0.3)] border-2 border-indigo-800">
+           <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800" alt="Doctor talking to patient" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-luminosity" />
+         </div>
+         <div class="absolute -bottom-8 -right-8 w-[200px] h-[200px] bg-sky-500 rounded-full flex flex-col items-center justify-center p-4 transform rotate-12 shadow-2xl border-8 border-indigo-950">
+            <span class="text-indigo-950 font-black text-3xl uppercase tracking-tighter">100%</span>
+            <span class="text-indigo-950 font-bold uppercase text-sm mt-1">Guaranteed</span>
+         </div>
+      </div>
+
+      <div class="w-full md:w-1/2">
+        <h2 class="text-sky-400 font-bold tracking-widest uppercase text-sm mb-4">Our Promise</h2>
+        <h3 class="text-[40px] font-black mb-6 leading-tight">Quality You Can Trust</h3>
+        <p class="text-indigo-200 mb-10 leading-relaxed text-[18px]">
+          Manufactured in the USA in a certified facility and tested for purity and consistency. FitNoura is designed to deliver reliable, high-quality supplementation you can trust daily.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 13. Footer -->
+  <footer class="bg-indigo-950 text-white pt-20 pb-8 px-6">
+    <div class="max-w-[600px] mx-auto flex flex-col items-center text-center mb-12 border-b border-indigo-900 pb-12">
+      
+      <!-- Logo -->
+      <div class="flex flex-col items-center">
+        <div class="flex items-center space-x-2 mb-6">
+          <div class="bg-sky-500 text-indigo-950 w-12 h-12 flex items-center justify-center rounded-xl font-black italic text-2xl">fn</div>
+          <div class="text-white text-3xl font-black tracking-tight">Fitnoura</div>
+        </div>
+        <p class="text-indigo-200 text-sm leading-relaxed mb-8">Empowering your body to heal from the inside out. Science-backed nutrition for clear skin and immune vitality.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 rounded-full bg-indigo-900 flex items-center justify-center hover:bg-sky-500 transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-indigo-900 flex items-center justify-center hover:bg-sky-500 transition-colors"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-indigo-900 flex items-center justify-center hover:bg-sky-500 transition-colors"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FDA Disclaimer & Bottom Bar -->
+    <div class="max-w-[1200px] mx-auto flex flex-col justify-center items-center text-[12px] text-indigo-300/60 font-medium">
+      <div class="mb-4 max-w-lg text-center">
+        *These statements have not been evaluated by the FDA. These products are not intended to diagnose, treat, cure or prevent any disease.
+      </div>
+      <div class="flex space-x-6">
+        <span>© 2026 Fitnoura. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script to initialize icons and handle carousel logic -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Testimonial Carousel Scrolling Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const scrollContainer = document.getElementById('testimonials-container');
+      const scrollLeftBtn = document.getElementById('scroll-left');
+      const scrollRightBtn = document.getElementById('scroll-right');
+
+      if (scrollContainer && scrollLeftBtn && scrollRightBtn) {
+        scrollLeftBtn.addEventListener('click', () => {
+          scrollContainer.scrollBy({ left: -400, behavior: 'smooth' });
+        });
+
+        scrollRightBtn.addEventListener('click', () => {
+          scrollContainer.scrollBy({ left: 400, behavior: 'smooth' });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
