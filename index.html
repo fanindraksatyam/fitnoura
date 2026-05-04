@@ -64,6 +64,7 @@
 
     #testimonials-container {
       overscroll-behavior-x: contain;
+      -webkit-overflow-scrolling: touch;
     }
 
     @keyframes float {
@@ -675,47 +676,8 @@
       }
     });
 
-    // Mobile safety: prevent sideways page dragging/blank side space.
-    // Keeps vertical scrolling normal and still allows the testimonial carousel to scroll horizontally.
-    (function lockPageHorizontalDrag() {
-      let startX = 0;
-      let startY = 0;
 
-      function resetHorizontalScroll() {
-        if (window.scrollX !== 0) {
-          window.scrollTo(0, window.scrollY);
-        }
-        document.documentElement.scrollLeft = 0;
-        document.body.scrollLeft = 0;
-      }
-
-      document.addEventListener('touchstart', function (event) {
-        const touch = event.touches && event.touches[0];
-        if (!touch) return;
-        startX = touch.clientX;
-        startY = touch.clientY;
-      }, { passive: true });
-
-      document.addEventListener('touchmove', function (event) {
-        if (event.target.closest('#testimonials-container')) return;
-
-        const touch = event.touches && event.touches[0];
-        if (!touch) return;
-
-        const deltaX = touch.clientX - startX;
-        const deltaY = touch.clientY - startY;
-
-        if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 8) {
-          event.preventDefault();
-          resetHorizontalScroll();
-        }
-      }, { passive: false });
-
-      window.addEventListener('scroll', resetHorizontalScroll, { passive: true });
-      window.addEventListener('resize', resetHorizontalScroll);
-      window.addEventListener('orientationchange', resetHorizontalScroll);
-      resetHorizontalScroll();
-    })();
+    // No touchmove/page-scroll lock is used here. CSS handles horizontal overflow so vertical scrolling stays smooth.
 
   </script>
 </body>
