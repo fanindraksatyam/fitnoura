@@ -12,6 +12,16 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <style>
+
+    @keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
     /* Hide scrollbar for Chrome, Safari and Opera */
     .hide-scrollbar::-webkit-scrollbar {
       display: none;
@@ -43,18 +53,19 @@
       <a href="#" class="hover:text-sky-500 transition-colors">Shop</a>
       <a href="#" class="hover:text-sky-500 transition-colors">The Science</a>
       <a href="#" class="hover:text-sky-500 transition-colors">FAQs</a>
-      <a href="#" class="hover:text-sky-500 transition-colors">Our Story</a>
+     
     </nav>
 
     <div class="flex items-center space-x-5">
-      <button class="hidden sm:block bg-indigo-600 hover:bg-indigo-700 text-white text-[14px] font-bold px-8 py-3 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-        SHOP NOW
-      </button>
-      <button class="text-slate-700 hover:text-sky-500 transition-colors relative">
-        <i data-lucide="shopping-bag" class="w-6 h-6" stroke-width="1.5"></i>
-        <span class="absolute -top-1 -right-1 bg-sky-500 w-4 h-4 rounded-full border-2 border-white"></span>
-      </button>
-      <button class="lg:hidden text-slate-700">
+<a 
+  href="https://www.amazon.com/gp/product/B0FSP1BN8V" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  class="hidden sm:block bg-indigo-600 hover:bg-indigo-700 text-white text-[14px] font-bold px-8 py-3 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-center"
+>
+  SHOP NOW
+</a>
+            <button class="lg:hidden text-slate-700">
         <i data-lucide="menu" class="w-7 h-7"></i>
       </button>
     </div>
@@ -87,25 +98,26 @@
 
       <!-- Right Image/Graphic -->
       <div class="relative h-full min-h-[400px] flex items-center justify-center lg:justify-end">
-        <div class="relative w-full max-w-[500px]">
-          <!-- Abstract sleek layout instead of exact cards to give a "new look" -->
-          <div class="glass-panel p-4 rounded-2xl relative z-20 transform translate-y-8 -translate-x-8 shadow-2xl">
-            <img 
-  src="assets/images/FitNoura-Final-Main-Image.png" 
-  alt="Pure Lactoferrin supplement"
-  class="rounded-xl w-full h-[250px] object-cover"
-/>
-            <div class="absolute bottom-8 left-8 bg-indigo-950/90 text-white px-4 py-2 rounded-lg font-bold shadow-lg border border-indigo-500/30 backdrop-blur-md flex items-center">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-sky-400 mr-2"></i> Pure Extract
-            </div>
-          </div>
-          
-          <div class="glass-panel p-4 rounded-2xl absolute top-0 right-0 w-[80%] z-10 shadow-2xl transform translate-x-4 -translate-y-4">
-            <img 
-  src="assets/images/FitNoura-Final-Main-Image.png" 
-  alt="Fitnoura Lactoferrin"
-  class="rounded-xl w-full h-[200px] object-cover"
-/>
+        
+<div class="relative w-full max-w-[420px] mx-auto">
+
+  <!-- Glow -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <div class="w-72 h-72 bg-gradient-to-tr from-cyan-400/20 via-blue-500/20 to-indigo-600/20 blur-3xl rounded-full"></div>
+  </div>
+
+  <!-- Glass layers -->
+  <div class="absolute -top-8 -right-8 w-full h-full bg-white/5 rounded-3xl backdrop-blur-xl border border-white/10"></div>
+  <div class="absolute -bottom-8 -left-8 w-full h-full bg-white/5 rounded-3xl backdrop-blur-xl border border-white/10"></div>
+
+  <!-- Product -->
+  <img 
+    src="assets/images/FitNoura-Final-Main-Image.png" 
+    alt="Fitnoura Lactoferrin bottle"
+    class="relative z-10 w-full h-auto object-contain drop-shadow-[0_40px_80px_rgba(0,0,0,0.6)] scale-105 animate-float"
+  />
+
+</div>
              <div class="absolute top-8 right-8 bg-sky-500 text-indigo-950 px-3 py-1 rounded-full text-xs font-black shadow-lg">
               95%+ Potency
             </div>
@@ -135,8 +147,11 @@
   class="w-full h-full object-contain rounded-xl group-hover:scale-105 transition-transform duration-500"
 />          </div>
           <h4 class="text-2xl font-black text-indigo-950 mb-2">FitNoura Lactoferrin 300mg</h4>
-          <p class="text-sky-600 font-black text-xl mb-4">$34.95</p>
-          <p class="text-slate-400 font-medium line-through decoration-slate-300">$39.95</p>
+<div class="flex items-center gap-3 mt-2">
+  <span class="text-sky-600 text-2xl font-extrabold">$34.95</span>
+  <span class="text-gray-400 line-through text-lg">$39.95</span>
+  <span class="text-green-500 text-sm font-bold">SAVE 13%</span>
+</div>
           <p class="text-slate-600 mb-8 flex-grow leading-relaxed">A premium lactoferrin supplement formulated to support gut health, immune balance, and iron regulation using advanced delayed-release technology.</p>
          <button 
   onclick="window.open('https://www.amazon.com/gp/product/B0FSP1BN8V', '_blank')"
@@ -149,11 +164,17 @@
         <div class="bg-white rounded-[2rem] p-8 shadow-sm border border-indigo-50 flex flex-col hover:shadow-xl transition-all duration-300 group">
           <div class="bg-sky-50 rounded-2xl h-[240px] flex items-center justify-center p-6 mb-8 relative overflow-hidden group-hover:bg-sky-100 transition-colors">
             <span class="absolute top-4 left-4 bg-indigo-950 text-white text-xs font-black px-3 py-1 rounded-full shadow-sm">Coming Soon</span>
-          <img 
-  src="assets/images/Stomach-Gut.png" 
-  alt="Enteric coating absorption process"
-  class="w-full h-full object-contain rounded-xl group-hover:scale-105 transition-transform duration-500"
-/> 
+          <div class="flex flex-col items-center justify-center h-[200px] rounded-xl bg-gradient-to-br from-indigo-100 to-indigo-50">
+
+  <span class="text-xs font-bold text-indigo-500 mb-2 tracking-widest">
+    NEXT PRODUCT
+  </span>
+
+  <span class="text-3xl md:text-4xl font-extrabold text-indigo-900 opacity-90">
+    Coming Soon
+  </span>
+
+</div>
           </div>
           <h4 class="text-2xl font-black text-indigo-950 mb-2">FitNoura Pure Fisetin 500mg</h4>
           <div class="flex items-center space-x-3 mb-4">
@@ -161,7 +182,11 @@
             <p class="text-slate-400 font-medium line-through decoration-slate-300">$79.95</p>
           </div>
           <p class="text-slate-600 mb-8 flex-grow leading-relaxed">A powerful antioxidant supplement designed to support cellular health and healthy aging. Formulated for daily use to promote overall wellness and vitality.</p>
-          <button class="w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-4 rounded-xl transition-colors">Notify Me</button>
+          <div class="hidden">
+  <button class="bg-sky-500 text-white px-6 py-3 rounded-lg font-semibold">
+    Notify Me
+  </button>
+</div>
         </div>
       </div>
     </div>
@@ -376,7 +401,7 @@
     <div class="max-w-[1200px] mx-auto px-6 mb-16 flex justify-between items-end">
       <div>
         <h2 class="text-sky-600 font-bold tracking-widest uppercase text-sm mb-2">Real Results</h2>
-        <h3 class="text-[32px] sm:text-[40px] font-black text-indigo-950 tracking-tight">Don't Just Take Our Word For It</h3>
+        <h3 class="text-[32px] sm:text-[40px] font-black text-indigo-950 tracking-tight">From verified Amazon customers</h3>
       </div>
       <div class="hidden md:flex space-x-3">
         <button id="scroll-left" class="w-12 h-12 rounded-full border-2 border-indigo-100 flex items-center justify-center text-indigo-600 hover:bg-indigo-50 hover:border-indigo-200 transition-all">
@@ -396,12 +421,12 @@
           <div class="flex text-[#fbbf24] mb-6">
             <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
           </div>
-          <h4 class="font-black text-[20px] text-indigo-950 mb-4">"Made all the difference"</h4>
-          <p class="text-slate-600 text-[16px] leading-[1.7] mb-8 flex-grow">"It corrected my bloating, fatigue and joint pain. I changed was taking these 2 caps morning and its made all the difference."</p>
+          <h4 class="font-black text-[20px] text-indigo-950 mb-4">" Love having this for everyday support"</h4>
+          <p class="text-slate-600 text-[16px] leading-[1.7] mb-8 flex-grow">"I’ve been using this lactoferrin supplement as part of my wellness routine and really like it. It feels good to have something that supports both immunity and gut health in one. The delayed release capsules make it easy on my stomach, and I’ve had no issues with digestion. I love that it’s made from grass-fed bovine lactoferrin and low in lactose. It's a clean, quality option if you're looking to support your immune system."</p>
           <div class="flex items-center pt-6 border-t border-slate-200">
             <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold mr-3">VB</div>
             <div>
-              <div class="font-bold text-indigo-950">Verified Buyer</div>
+              <div class="font-bold text-indigo-950">Melissa S</div>
               <div class="text-sky-500 text-xs font-bold flex items-center"><i data-lucide="check-circle-2" class="w-3 h-3 mr-1"></i> Verified</div>
             </div>
           </div>
@@ -411,12 +436,12 @@
           <div class="flex text-[#fbbf24] mb-6">
             <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
           </div>
-          <h4 class="font-black text-[20px] text-indigo-950 mb-4">"The real deal"</h4>
-          <p class="text-slate-600 text-[16px] leading-[1.7] mb-8 flex-grow">"I've always been skeptical about most supplements, but Fitnoura is for real. Their detailed explanation about ingredients and delivery method instilled trust."</p>
+          <h4 class="font-black text-[20px] text-indigo-950 mb-4">"Solid Immune and Gut Support"</h4>
+          <p class="text-slate-600 text-[16px] leading-[1.7] mb-8 flex-grow">"The FitNoura Lactoferrin 300mg supplement provides a straightforward way to add lactoferrin to a daily routine. Each capsule contains 300mg of freeze-dried lactoferrin from grass-fed bovine sources, with low lactose content that makes it easier on the stomach for those sensitive to dairy. Lactoferrin is known for its ability to bind iron, which may help maintain a balanced gut environment and contribute to overall digestive comfort."</p>
           <div class="flex items-center pt-6 border-t border-slate-200">
             <div class="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 font-bold mr-3">KJ</div>
             <div>
-              <div class="font-bold text-indigo-950">Kathy J.</div>
+              <div class="font-bold text-indigo-950">KM</div>
               <div class="text-sky-500 text-xs font-bold flex items-center"><i data-lucide="check-circle-2" class="w-3 h-3 mr-1"></i> Verified</div>
             </div>
           </div>
@@ -426,12 +451,12 @@
           <div class="flex text-[#fbbf24] mb-6">
             <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
           </div>
-          <h4 class="font-black text-[20px] text-indigo-950 mb-4">"Customer for life"</h4>
-          <p class="text-slate-600 text-[16px] leading-[1.7] mb-8 flex-grow">"My sister in law swears by this. Within the first 2 weeks, my headaches and fatigue disappeared. Since then, zero new lesions. Hands down the most important addition."</p>
+          <h4 class="font-black text-[20px] text-indigo-950 mb-4">" Good, clean, effective immune support"</h4>
+          <p class="text-slate-600 text-[16px] leading-[1.7] mb-8 flex-grow">"This supplement has very little, if any, smell. It also has no taste after first putting it in my mouth or after swallowing it. I did not experience any aftertaste while taking this supplement for a full 30 days. The capsules were larger than what I was expecting them to be, but I didn't have any problems swallowing them. I always took the pills with at least 8 ounces of water, just to make sure that they didn't get stuck on their way down."</p>
           <div class="flex items-center pt-6 border-t border-slate-200">
             <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold mr-3">DM</div>
             <div>
-              <div class="font-bold text-indigo-950">Diane M.</div>
+              <div class="font-bold text-indigo-950">Sam</div>
               <div class="text-sky-500 text-xs font-bold flex items-center"><i data-lucide="check-circle-2" class="w-3 h-3 mr-1"></i> Verified</div>
             </div>
           </div>
@@ -441,12 +466,12 @@
           <div class="flex text-[#fbbf24] mb-6">
             <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
           </div>
-          <h4 class="font-black text-[20px] text-indigo-950 mb-4">"Finally some relief"</h4>
-          <p class="text-slate-600 text-[16px] leading-[1.7] mb-8 flex-grow">"I have multiple autoimmune issues and Fitnoura has put them all into remission. No more fatigue, no more pain, and my skin has cleared up. It's life-changing!"</p>
+          <h4 class="font-black text-[20px] text-indigo-950 mb-4">"Easy To Ingest"</h4>
+          <p class="text-slate-600 text-[16px] leading-[1.7] mb-8 flex-grow">"These are easy to take and have no taste that I can tell. I can't speak to their effectiveness but they are easy to swallow."</p>
           <div class="flex items-center pt-6 border-t border-slate-200">
             <div class="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 font-bold mr-3">MJ</div>
             <div>
-              <div class="font-bold text-indigo-950">Maria J.</div>
+              <div class="font-bold text-indigo-950">Carolyn</div>
               <div class="text-sky-500 text-xs font-bold flex items-center"><i data-lucide="check-circle-2" class="w-3 h-3 mr-1"></i> Verified</div>
             </div>
           </div>
