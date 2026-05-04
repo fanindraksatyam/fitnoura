@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitnoura | Immune Support</title>
+    <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
   
   <!-- Tailwind CSS via CDN for styling -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -99,28 +101,30 @@
       <!-- Right Image/Graphic -->
       <div class="relative h-full min-h-[400px] flex items-center justify-center lg:justify-end">
         
-<div class="relative w-full max-w-[420px] mx-auto">
+<div class="relative w-full max-w-[420px] mx-auto overflow-hidden">
 
-  <!-- Glow -->
+  <!-- Glow (clean, centered) -->
   <div class="absolute inset-0 flex items-center justify-center">
-    <div class="w-72 h-72 bg-gradient-to-tr from-cyan-400/20 via-blue-500/20 to-indigo-600/20 blur-3xl rounded-full"></div>
+    <div class="w-80 h-80 bg-gradient-to-tr from-cyan-400/25 via-blue-500/25 to-indigo-600/25 blur-3xl rounded-full"></div>
   </div>
 
-  <!-- Glass layers -->
-  <div class="absolute -top-8 -right-8 w-full h-full bg-white/5 rounded-3xl backdrop-blur-xl border border-white/10"></div>
-  <div class="absolute -bottom-8 -left-8 w-full h-full bg-white/5 rounded-3xl backdrop-blur-xl border border-white/10"></div>
+  <!-- Single glass card -->
+  <div class="absolute inset-0 bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 z-10"></div>
 
-  <!-- Product -->
+  <!-- Product (FIXED) -->
   <img 
     src="assets/images/FitNoura-Final-Main-Image.png" 
     alt="Fitnoura Lactoferrin bottle"
-    class="relative z-10 w-full h-auto object-contain drop-shadow-[0_40px_80px_rgba(0,0,0,0.6)] scale-105 animate-float"
+    class="relative z-20 w-full max-h-[420px] object-contain mx-auto block drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
   />
 
+  <!-- Badge (INSIDE container now) -->
+  <div class="absolute top-5 right-5 bg-sky-500 text-indigo-950 px-3 py-1 rounded-full text-xs font-black shadow-lg z-30">
+    95%+ Potency
+  </div>
+
 </div>
-             <div class="absolute top-8 right-8 bg-sky-500 text-indigo-950 px-3 py-1 rounded-full text-xs font-black shadow-lg">
-              95%+ Potency
-            </div>
+
           </div>
         </div>
       </div>
@@ -144,8 +148,9 @@
 <img 
   src="assets/images/FitNoura-Final-Main-Image.png" 
   alt="Fitnoura Lactoferrin bottle"
-  class="w-full h-full object-contain rounded-xl group-hover:scale-105 transition-transform duration-500"
-/>          </div>
+  class="w-full max-h-[200px] object-contain rounded-xl mx-auto block"
+/>          
+</div>
           <h4 class="text-2xl font-black text-indigo-950 mb-2">FitNoura Lactoferrin 300mg</h4>
 <div class="flex items-center gap-3 mt-2">
   <span class="text-sky-600 text-2xl font-extrabold">$34.95</span>
