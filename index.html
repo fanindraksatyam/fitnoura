@@ -15,6 +15,57 @@
 
   <style>
 
+    /* Prevent mobile horizontal page drag/blank side space */
+    html, body {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      overflow-x: hidden !important;
+      overscroll-behavior-x: none;
+    }
+
+    html {
+      position: relative;
+    }
+
+    body {
+      position: relative;
+      margin: 0;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    img, svg, video, canvas {
+      max-width: 100%;
+    }
+
+    header, main, section, footer {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: clip;
+      min-width: 0;
+    }
+
+    main {
+      isolation: isolate;
+    }
+
+    body > * {
+      max-width: 100%;
+    }
+
+    @supports not (overflow: clip) {
+      header, main, section, footer {
+        overflow-x: hidden;
+      }
+    }
+
+    #testimonials-container {
+      overscroll-behavior-x: contain;
+    }
+
     @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
@@ -50,7 +101,7 @@
   </style>
   
 </head>
-<body class="min-h-screen bg-[#f8fafc] font-sans text-[#0f172a] overflow-x-hidden antialiased">
+<body class="min-h-screen w-full max-w-full bg-[#f8fafc] font-sans text-[#0f172a] overflow-x-hidden antialiased">
 
   <!-- 2. Header/Navbar -->
   <header class="w-full bg-white/95 backdrop-blur-md flex items-center justify-between px-4 sm:px-6 lg:px-12 py-3 sm:py-4 sticky top-0 z-50 border-b border-indigo-100 shadow-sm">
@@ -82,8 +133,8 @@
   <!-- 3. Modern Dark Hero Section -->
   <main class="relative bg-indigo-950 text-white pt-12 sm:pt-16 lg:pt-20 pb-16 sm:pb-24 lg:pb-32 px-4 sm:px-6 lg:px-12 overflow-hidden">
     <!-- Decorative background elements -->
-    <div class="absolute top-0 right-0 w-[260px] h-[260px] sm:w-[420px] sm:h-[420px] lg:w-[600px] lg:h-[600px] bg-sky-500/20 rounded-full blur-[70px] sm:blur-[100px] lg:blur-[120px] pointer-events-none transform translate-x-1/3 -translate-y-1/3"></div>
-    <div class="absolute bottom-0 left-0 w-[240px] h-[240px] sm:w-[380px] sm:h-[380px] lg:w-[500px] lg:h-[500px] bg-indigo-600/30 rounded-full blur-[70px] sm:blur-[90px] lg:blur-[100px] pointer-events-none transform -translate-x-1/2 translate-y-1/3"></div>
+    <div class="absolute top-0 right-0 w-[260px] h-[260px] sm:w-[420px] sm:h-[420px] lg:w-[600px] lg:h-[600px] bg-sky-500/20 rounded-full blur-[70px] sm:blur-[100px] lg:blur-[120px] pointer-events-none transform translate-x-1/4 -translate-y-1/3"></div>
+    <div class="absolute bottom-0 left-0 w-[240px] h-[240px] sm:w-[380px] sm:h-[380px] lg:w-[500px] lg:h-[500px] bg-indigo-600/30 rounded-full blur-[70px] sm:blur-[90px] lg:blur-[100px] pointer-events-none transform -translate-x-1/3 translate-y-1/3"></div>
 
     <div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center relative z-10">
       
@@ -241,7 +292,7 @@
   <!-- 6. Suboptimal Strategy (Redesigned as Dark/Split Section) -->
   <section class="py-16 sm:py-20 lg:py-24 bg-indigo-950 px-4 sm:px-6 text-white overflow-hidden relative">
     <!-- Decor -->
-    <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-sky-500/10 rounded-full blur-[80px]"></div>
+    <div class="absolute top-0 right-0 w-[260px] h-[260px] sm:w-[400px] sm:h-[400px] bg-sky-500/10 rounded-full blur-[70px] sm:blur-[80px] pointer-events-none"></div>
 
     <div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center relative z-10">
       <div class="order-2 lg:order-1">
@@ -427,7 +478,7 @@
       <div id="testimonials-container" class="flex gap-5 sm:gap-8 overflow-x-auto pb-10 sm:pb-12 snap-x snap-mandatory px-4 sm:px-6 md:px-20 hide-scrollbar scroll-smooth">
         
         <!-- Testimonial -->
-        <div class="bg-slate-50 p-6 sm:p-10 rounded-3xl min-w-[280px] sm:min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-sky-500">
+        <div class="bg-slate-50 p-6 sm:p-10 rounded-3xl min-w-[calc(100vw-2rem)] sm:min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-sky-500">
           <div class="flex text-[#fbbf24] mb-6">
             <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
           </div>
@@ -442,7 +493,7 @@
           </div>
         </div>
 
-        <div class="bg-slate-50 p-6 sm:p-10 rounded-3xl min-w-[280px] sm:min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-indigo-600">
+        <div class="bg-slate-50 p-6 sm:p-10 rounded-3xl min-w-[calc(100vw-2rem)] sm:min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-indigo-600">
           <div class="flex text-[#fbbf24] mb-6">
             <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
           </div>
@@ -457,7 +508,7 @@
           </div>
         </div>
 
-        <div class="bg-slate-50 p-6 sm:p-10 rounded-3xl min-w-[280px] sm:min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-sky-500">
+        <div class="bg-slate-50 p-6 sm:p-10 rounded-3xl min-w-[calc(100vw-2rem)] sm:min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-sky-500">
           <div class="flex text-[#fbbf24] mb-6">
             <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
           </div>
@@ -472,7 +523,7 @@
           </div>
         </div>
 
-        <div class="bg-slate-50 p-6 sm:p-10 rounded-3xl min-w-[280px] sm:min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-indigo-600">
+        <div class="bg-slate-50 p-6 sm:p-10 rounded-3xl min-w-[calc(100vw-2rem)] sm:min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-indigo-600">
           <div class="flex text-[#fbbf24] mb-6">
             <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
           </div>
@@ -552,7 +603,7 @@
 />
 <div class="absolute inset-0 bg-indigo-900/25"></div>
          </div>
-         <div class="absolute -bottom-5 -right-4 sm:-bottom-8 sm:-right-8 w-[130px] h-[130px] sm:w-[180px] sm:h-[180px] lg:w-[200px] lg:h-[200px] bg-sky-500 rounded-full flex flex-col items-center justify-center p-4 transform rotate-12 shadow-2xl border-4 sm:border-8 border-indigo-950">
+         <div class="absolute bottom-3 right-3 sm:-bottom-8 sm:-right-8 w-[130px] h-[130px] sm:w-[180px] sm:h-[180px] lg:w-[200px] lg:h-[200px] bg-sky-500 rounded-full flex flex-col items-center justify-center p-4 transform rotate-12 shadow-2xl border-4 sm:border-8 border-indigo-950">
             <span class="text-indigo-950 font-black text-2xl sm:text-3xl uppercase tracking-tighter">95%+</span>
             <span class="text-indigo-950 font-bold uppercase text-sm mt-1">Potency</span>
          </div>
@@ -623,6 +674,49 @@
         });
       }
     });
+
+    // Mobile safety: prevent sideways page dragging/blank side space.
+    // Keeps vertical scrolling normal and still allows the testimonial carousel to scroll horizontally.
+    (function lockPageHorizontalDrag() {
+      let startX = 0;
+      let startY = 0;
+
+      function resetHorizontalScroll() {
+        if (window.scrollX !== 0) {
+          window.scrollTo(0, window.scrollY);
+        }
+        document.documentElement.scrollLeft = 0;
+        document.body.scrollLeft = 0;
+      }
+
+      document.addEventListener('touchstart', function (event) {
+        const touch = event.touches && event.touches[0];
+        if (!touch) return;
+        startX = touch.clientX;
+        startY = touch.clientY;
+      }, { passive: true });
+
+      document.addEventListener('touchmove', function (event) {
+        if (event.target.closest('#testimonials-container')) return;
+
+        const touch = event.touches && event.touches[0];
+        if (!touch) return;
+
+        const deltaX = touch.clientX - startX;
+        const deltaY = touch.clientY - startY;
+
+        if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 8) {
+          event.preventDefault();
+          resetHorizontalScroll();
+        }
+      }, { passive: false });
+
+      window.addEventListener('scroll', resetHorizontalScroll, { passive: true });
+      window.addEventListener('resize', resetHorizontalScroll);
+      window.addEventListener('orientationchange', resetHorizontalScroll);
+      resetHorizontalScroll();
+    })();
+
   </script>
 </body>
 </html>
