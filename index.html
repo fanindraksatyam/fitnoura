@@ -39,18 +39,26 @@
       -webkit-backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.2);
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    img {
+      max-width: 100%;
+    }
   </style>
   
 </head>
 <body class="min-h-screen bg-[#f8fafc] font-sans text-[#0f172a] overflow-x-hidden antialiased">
 
   <!-- 2. Header/Navbar -->
-  <header class="w-full bg-white/95 backdrop-blur-md flex items-center justify-between px-6 lg:px-12 py-5 sticky top-0 z-50 border-b border-indigo-100 shadow-sm">
+  <header class="w-full bg-white/95 backdrop-blur-md flex items-center justify-between px-4 sm:px-6 lg:px-12 py-3 sm:py-4 sticky top-0 z-50 border-b border-indigo-100 shadow-sm">
 <div class="flex items-center cursor-pointer">
   <img 
     src="assets/images/Logo.png" 
     alt="Fitnoura"
-    class="h-16 scale-150"
+    class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain"
   />
 </div>
 
@@ -61,7 +69,7 @@
   href="https://www.amazon.com/gp/product/B0FSP1BN8V" 
   target="_blank" 
   rel="noopener noreferrer"
-  class="hidden sm:block bg-indigo-600 hover:bg-indigo-700 text-white text-[14px] font-bold px-8 py-3 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-center"
+  class="hidden sm:inline-flex bg-indigo-600 hover:bg-indigo-700 text-white text-xs md:text-[14px] font-bold px-5 md:px-8 py-2.5 md:py-3 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-center whitespace-nowrap"
 >
   SHOP NOW
 </a>
@@ -72,37 +80,37 @@
   </header>
 
   <!-- 3. Modern Dark Hero Section -->
-  <main class="relative bg-indigo-950 text-white pt-20 pb-32 px-6 lg:px-12 overflow-hidden">
+  <main class="relative bg-indigo-950 text-white pt-12 sm:pt-16 lg:pt-20 pb-16 sm:pb-24 lg:pb-32 px-4 sm:px-6 lg:px-12 overflow-hidden">
     <!-- Decorative background elements -->
-    <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-sky-500/20 rounded-full blur-[120px] pointer-events-none transform translate-x-1/3 -translate-y-1/3"></div>
-    <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-600/30 rounded-full blur-[100px] pointer-events-none transform -translate-x-1/2 translate-y-1/3"></div>
+    <div class="absolute top-0 right-0 w-[260px] h-[260px] sm:w-[420px] sm:h-[420px] lg:w-[600px] lg:h-[600px] bg-sky-500/20 rounded-full blur-[70px] sm:blur-[100px] lg:blur-[120px] pointer-events-none transform translate-x-1/3 -translate-y-1/3"></div>
+    <div class="absolute bottom-0 left-0 w-[240px] h-[240px] sm:w-[380px] sm:h-[380px] lg:w-[500px] lg:h-[500px] bg-indigo-600/30 rounded-full blur-[70px] sm:blur-[90px] lg:blur-[100px] pointer-events-none transform -translate-x-1/2 translate-y-1/3"></div>
 
-    <div class="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+    <div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center relative z-10">
       
       <!-- Left Text -->
-      <div class="max-w-[600px]">
-        <div class="inline-block mb-6">
-          <p class="text-sky-300 text-[12px] font-bold border border-sky-400/30 bg-sky-500/10 px-4 py-1.5 rounded-full uppercase tracking-widest flex items-center">
+      <div class="max-w-[600px] mx-auto lg:mx-0 text-center lg:text-left">
+        <div class="inline-flex justify-center lg:justify-start mb-5 sm:mb-6">
+          <p class="text-sky-300 text-[10px] sm:text-[12px] font-bold border border-sky-400/30 bg-sky-500/10 px-3 sm:px-4 py-1.5 rounded-full uppercase tracking-widest flex items-center">
             <i data-lucide="shield-check" class="w-4 h-4 mr-2"></i> Enteric-Coated • 95%+ Pure
           </p>
         </div>
         
-        <h1 class="text-[48px] sm:text-[60px] leading-[1.1] font-black text-white mb-6 tracking-tight">
+        <h1 class="text-[34px] sm:text-[46px] lg:text-[60px] leading-[1.08] font-black text-white mb-5 sm:mb-6 tracking-tight">
           Advanced Lactoferrin for Gut & Immune Health <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400"> - Delivered Where It Matters</span>
         </h1>
         
-        <p class="text-[18px] text-indigo-100/80 mb-10 leading-[1.7] font-medium">
+        <p class="text-base sm:text-[18px] text-indigo-100/80 mb-8 sm:mb-10 leading-[1.7] font-medium">
           300mg of 95%+ pure lactoferrin in enteric-coated capsules designed to release in the intestines for optimal absorption and effectiveness.
         </p>
       </div>
 
       <!-- Right Image/Graphic -->
-      <div class="relative h-full min-h-[400px] flex items-center justify-center lg:justify-end">    
-<div class="relative w-full max-w-[420px] mx-auto overflow-hidden">
+      <div class="relative min-h-[300px] sm:min-h-[380px] lg:min-h-[420px] flex items-center justify-center lg:justify-end">    
+<div class="relative w-full max-w-[300px] sm:max-w-[380px] lg:max-w-[420px] mx-auto overflow-hidden rounded-3xl">
 
   <!-- Glow (clean, centered) -->
   <div class="absolute inset-0 flex items-center justify-center">
-    <div class="w-80 h-80 bg-gradient-to-tr from-cyan-400/25 via-blue-500/25 to-indigo-600/25 blur-3xl rounded-full"></div>
+    <div class="w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 bg-gradient-to-tr from-cyan-400/25 via-blue-500/25 to-indigo-600/25 blur-3xl rounded-full"></div>
   </div>
 
   <!-- Single glass card -->
@@ -112,11 +120,11 @@
   <img 
     src="assets/images/FitNoura-Final-Main-Image.png" 
     alt="Fitnoura Lactoferrin bottle"
-    class="relative z-20 w-full max-h-[420px] object-contain mx-auto block drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+    class="relative z-20 w-full max-h-[300px] sm:max-h-[380px] lg:max-h-[420px] object-contain mx-auto block drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
   />
 
   <!-- Badge (INSIDE container now) -->
-  <div class="absolute top-5 right-5 bg-sky-500 text-indigo-950 px-3 py-1 rounded-full text-xs font-black shadow-lg z-30">
+  <div class="absolute top-4 right-4 sm:top-5 sm:right-5 bg-sky-500 text-indigo-950 px-2.5 sm:px-3 py-1 rounded-full text-[10px] sm:text-xs font-black shadow-lg z-30">
     95%+ Potency
   </div>
 
@@ -130,28 +138,28 @@
   </main>
 
   <!-- 4. Dedicated Product Showcase (New Look) -->
-  <section class="py-24 bg-[#f8fafc] px-6">
+  <section class="py-16 sm:py-20 lg:py-24 bg-[#f8fafc] px-4 sm:px-6">
     <div class="max-w-[1200px] mx-auto">
       <div class="text-center mb-16">
         <h2 class="text-sky-600 font-bold tracking-widest uppercase text-sm mb-2">Our Formulas</h2>
-        <h3 class="text-3xl md:text-4xl font-black text-indigo-950">Choose Which Supplement You Need</h3>
+        <h3 class="text-2xl sm:text-3xl md:text-4xl font-black text-indigo-950">Choose Which Supplement You Need</h3>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-10 lg:gap-16 max-w-[1000px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 lg:gap-16 max-w-[1000px] mx-auto">
         <!-- Product 1 -->
-        <div class="bg-white rounded-[2rem] p-8 shadow-sm border border-indigo-50 flex flex-col hover:shadow-xl transition-all duration-300 group">
-          <div class="bg-indigo-50 rounded-2xl h-[240px] flex items-center justify-center p-6 mb-8 relative overflow-hidden group-hover:bg-indigo-100 transition-colors">
+        <div class="bg-white rounded-[1.5rem] sm:rounded-[2rem] p-5 sm:p-8 shadow-sm border border-indigo-50 flex flex-col hover:shadow-xl transition-all duration-300 group">
+          <div class="bg-indigo-50 rounded-2xl h-[200px] sm:h-[240px] flex items-center justify-center p-4 sm:p-6 mb-6 sm:mb-8 relative overflow-hidden group-hover:bg-indigo-100 transition-colors">
             <span class="absolute top-4 left-4 bg-white text-indigo-900 text-xs font-black px-3 py-1 rounded-full shadow-sm">Core Formula</span>
 <img 
   src="assets/images/FitNoura-Final-Main-Image.png" 
   alt="Fitnoura Lactoferrin bottle"
-  class="w-full max-h-[200px] object-contain rounded-xl mx-auto block"
+  class="w-full max-h-[170px] sm:max-h-[200px] object-contain rounded-xl mx-auto block"
 />          
 </div>
-          <h4 class="text-2xl font-black text-indigo-950 mb-2">FitNoura Lactoferrin 300mg</h4>
+          <h4 class="text-xl sm:text-2xl font-black text-indigo-950 mb-2">FitNoura Lactoferrin 300mg</h4>
 <div class="flex items-center gap-3 mt-2">
-  <span class="text-sky-600 text-2xl font-extrabold">$34.95</span>
-  <span class="text-gray-400 line-through text-lg">$39.95</span>
+  <span class="text-sky-600 text-xl sm:text-2xl font-extrabold">$34.95</span>
+  <span class="text-gray-400 line-through text-base sm:text-lg">$39.95</span>
   <span class="text-green-500 text-sm font-bold">SAVE 13%</span>
 </div>
           <p class="text-slate-600 mb-8 flex-grow leading-relaxed">A premium lactoferrin supplement formulated to support gut health, immune balance, and iron regulation using advanced delayed-release technology.</p>
@@ -163,8 +171,8 @@
         </div>
 
         <!-- Product 2 -->
-        <div class="bg-white rounded-[2rem] p-8 shadow-sm border border-indigo-50 flex flex-col hover:shadow-xl transition-all duration-300 group">
-          <div class="bg-sky-50 rounded-2xl h-[240px] flex items-center justify-center p-6 mb-8 relative overflow-hidden group-hover:bg-sky-100 transition-colors">
+        <div class="bg-white rounded-[1.5rem] sm:rounded-[2rem] p-5 sm:p-8 shadow-sm border border-indigo-50 flex flex-col hover:shadow-xl transition-all duration-300 group">
+          <div class="bg-sky-50 rounded-2xl h-[200px] sm:h-[240px] flex items-center justify-center p-4 sm:p-6 mb-6 sm:mb-8 relative overflow-hidden group-hover:bg-sky-100 transition-colors">
             <span class="absolute top-4 left-4 bg-indigo-950 text-white text-xs font-black px-3 py-1 rounded-full shadow-sm">Coming Soon</span>
           <div class="flex flex-col items-center justify-center h-[200px] rounded-xl bg-gradient-to-br from-indigo-100 to-indigo-50">
 
@@ -172,13 +180,13 @@
     NEXT PRODUCT
   </span>
 
-  <span class="text-3xl md:text-4xl font-extrabold text-indigo-900 opacity-90">
+  <span class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-indigo-900 opacity-90">
     Coming Soon
   </span>
 
 </div>
           </div>
-          <h4 class="text-2xl font-black text-indigo-950 mb-2">FitNoura Pure Fisetin 500mg</h4>
+          <h4 class="text-xl sm:text-2xl font-black text-indigo-950 mb-2">FitNoura Pure Fisetin 500mg</h4>
           <div class="flex items-center space-x-3 mb-4">
             <p class="text-sky-600 font-black text-xl">$59.95</p>
             <p class="text-slate-400 font-medium line-through decoration-slate-300">$79.95</p>
@@ -195,31 +203,31 @@
   </section>
 
   <!-- 5. Feature Grid (Modernized) -->
-  <section class="py-16 bg-white border-y border-indigo-50">
-    <div class="max-w-[1200px] mx-auto px-6">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-        <div class="flex flex-col items-center text-center p-6 rounded-2xl hover:bg-indigo-50/50 transition-colors">
+  <section class="py-12 sm:py-16 bg-white border-y border-indigo-50">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-8">
+        <div class="flex flex-col items-center text-center p-5 sm:p-6 rounded-2xl hover:bg-indigo-50/50 transition-colors">
           <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-4 text-indigo-600 transform rotate-3">
             <i data-lucide="activity" class="w-8 h-8" stroke-width="1.5"></i>
           </div>
           <span class="font-bold text-indigo-950">Gut Health Support</span>
 <span class="text-sm text-slate-500 mt-1">Supports microbiome balance and digestive comfort</span>
         </div>
-        <div class="flex flex-col items-center text-center p-6 rounded-2xl hover:bg-sky-50/50 transition-colors">
+        <div class="flex flex-col items-center text-center p-5 sm:p-6 rounded-2xl hover:bg-sky-50/50 transition-colors">
           <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mb-4 text-sky-600 transform -rotate-3">
             <i data-lucide="thermometer" class="w-8 h-8" stroke-width="1.5"></i>
           </div>
           <span class="font-bold text-indigo-950">Immune Function</span>
 <span class="text-sm text-slate-500 mt-1">Supports normal immune response</span>
         </div>
-        <div class="flex flex-col items-center text-center p-6 rounded-2xl hover:bg-indigo-50/50 transition-colors">
+        <div class="flex flex-col items-center text-center p-5 sm:p-6 rounded-2xl hover:bg-indigo-50/50 transition-colors">
           <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-4 text-indigo-600 transform rotate-3">
             <i data-lucide="shield-check" class="w-8 h-8" stroke-width="1.5"></i>
           </div>
           <span class="font-bold text-indigo-950">Iron Balance</span>
 <span class="text-sm text-slate-500 mt-1">Helps regulate iron absorption</span>
         </div>
-        <div class="flex flex-col items-center text-center p-6 rounded-2xl hover:bg-sky-50/50 transition-colors">
+        <div class="flex flex-col items-center text-center p-5 sm:p-6 rounded-2xl hover:bg-sky-50/50 transition-colors">
           <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mb-4 text-sky-600 transform -rotate-3">
             <i data-lucide="flask-conical" class="w-8 h-8" stroke-width="1.5"></i>
           </div>
@@ -231,22 +239,22 @@
   </section>
 
   <!-- 6. Suboptimal Strategy (Redesigned as Dark/Split Section) -->
-  <section class="py-24 bg-indigo-950 px-6 text-white overflow-hidden relative">
+  <section class="py-16 sm:py-20 lg:py-24 bg-indigo-950 px-4 sm:px-6 text-white overflow-hidden relative">
     <!-- Decor -->
     <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-sky-500/10 rounded-full blur-[80px]"></div>
 
-    <div class="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+    <div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center relative z-10">
       <div class="order-2 lg:order-1">
-        <h2 class="text-[32px] sm:text-[42px] font-black mb-6 leading-tight">
+        <h2 class="text-[28px] sm:text-[36px] lg:text-[42px] font-black mb-5 sm:mb-6 leading-tight">
           Why <span class="text-sky-400">Absorption Matters</span>
         </h2>
-        <p class="text-indigo-200 text-[18px] mb-10 leading-relaxed">
+        <p class="text-indigo-200 text-base sm:text-[18px] mb-8 sm:mb-10 leading-relaxed">
           Not all lactoferrin supplements are delivered the same. Standard capsules may break down in stomach acid before reaching the intestines.
           FitNoura uses enteric-coated capsules designed to protect lactoferrin and release it where your body can better utilize it.
         </p>
       </div>
 
-      <div class="order-1 lg:order-2 relative h-[400px] lg:h-full min-h-[500px] rounded-3xl overflow-hidden border-4 border-indigo-900 shadow-2xl">
+      <div class="order-1 lg:order-2 relative h-[300px] sm:h-[420px] lg:h-full lg:min-h-[500px] rounded-3xl overflow-hidden border-4 border-indigo-900 shadow-2xl">
         <img 
   src="assets/images/Stomach-Gut.png" 
   alt="Enteric coating absorption process"
@@ -258,16 +266,16 @@
   </section>
 
   <!-- 7. How Fitnoura works (Clean White Section) -->
-  <section class="py-24 bg-white px-6">
-    <div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-16">
+  <section class="py-16 sm:py-20 lg:py-24 bg-white px-4 sm:px-6">
+    <div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-10 sm:gap-14 lg:gap-16">
       
       <!-- Text Content First for new rhythm -->
       <div class="w-full lg:w-1/2">
         <h2 class="text-sky-600 font-bold tracking-widest uppercase text-sm mb-2">The Mechanism</h2>
-        <h3 class="text-[36px] sm:text-[44px] font-black text-indigo-950 mb-6 leading-tight">
+        <h3 class="text-[30px] sm:text-[38px] lg:text-[44px] font-black text-indigo-950 mb-5 sm:mb-6 leading-tight">
           How Lactoferrin Supports Your Body
         </h3>
-        <p class="text-slate-600 mb-8 text-[18px] leading-relaxed">
+        <p class="text-slate-600 mb-8 text-base sm:text-[18px] leading-relaxed">
           Lactoferrin is a naturally occurring protein involved in immune defense and iron metabolism. It interacts with the gut environment and supports the body’s natural balance.
         </p>
         
@@ -275,7 +283,7 @@
           <p class="font-bold text-indigo-900">FitNoura supports key biological functions through:</p>
         </div>
 
-        <div class="grid sm:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div class="flex items-center space-x-3 bg-white border border-indigo-50 p-4 rounded-xl shadow-sm">
             <div class="bg-indigo-100 p-1.5 rounded-lg text-indigo-600"><i data-lucide="check" class="w-4 h-4"></i></div>
             <span class="font-bold text-sm text-indigo-950">Supports Gut Microbiome Balance</span>
@@ -297,22 +305,22 @@
 
       <!-- Refined Venn Diagram visualization -->
       <div class="w-full lg:w-1/2 flex justify-center py-10 relative">
-        <div class="relative w-[360px] h-[360px]">
-          <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[220px] h-[220px] rounded-full bg-indigo-100 mix-blend-multiply flex items-start justify-center pt-8 border-2 border-indigo-200">
+        <div class="relative w-[280px] h-[280px] sm:w-[360px] sm:h-[360px]">
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[170px] h-[170px] sm:w-[220px] sm:h-[220px] rounded-full bg-indigo-100 mix-blend-multiply flex items-start justify-center pt-6 sm:pt-8 border-2 border-indigo-200">
             <span class="text-[13px] font-bold text-indigo-900">Gut Health</span>
           </div>
-          <div class="absolute top-1/2 -translate-y-1/2 left-0 w-[220px] h-[220px] rounded-full bg-sky-100 mix-blend-multiply flex items-center justify-start pl-8 border-2 border-sky-200">
+          <div class="absolute top-1/2 -translate-y-1/2 left-0 w-[170px] h-[170px] sm:w-[220px] sm:h-[220px] rounded-full bg-sky-100 mix-blend-multiply flex items-center justify-start pl-6 sm:pl-8 border-2 border-sky-200">
             <span class="text-[13px] font-bold text-indigo-900 max-w-[60px] leading-tight">Diet</span>
           </div>
-          <div class="absolute top-1/2 -translate-y-1/2 right-0 w-[220px] h-[220px] rounded-full bg-indigo-50 mix-blend-multiply flex items-center justify-end pr-8 border-2 border-indigo-200">
+          <div class="absolute top-1/2 -translate-y-1/2 right-0 w-[170px] h-[170px] sm:w-[220px] sm:h-[220px] rounded-full bg-indigo-50 mix-blend-multiply flex items-center justify-end pr-6 sm:pr-8 border-2 border-indigo-200">
             <span class="text-[13px] font-bold text-indigo-900">Lifestyle</span>
           </div>
-          <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[220px] h-[220px] rounded-full bg-sky-50 mix-blend-multiply flex items-end justify-center pb-8 border-2 border-sky-200">
+          <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[170px] h-[170px] sm:w-[220px] sm:h-[220px] rounded-full bg-sky-50 mix-blend-multiply flex items-end justify-center pb-6 sm:pb-8 border-2 border-sky-200">
             <span class="text-[13px] font-bold text-indigo-900 max-w-[70px] text-center leading-tight">Environment</span>
           </div>
           
-          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-indigo-600 w-[160px] h-[160px] rounded-full shadow-2xl flex items-center justify-center border-4 border-white">
-            <span class="text-white font-black tracking-wide text-[16px] text-center px-4">Gut &<br>Immune Balance</span>
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-indigo-600 w-[120px] h-[120px] sm:w-[160px] sm:h-[160px] rounded-full shadow-2xl flex items-center justify-center border-4 border-white">
+            <span class="text-white font-black tracking-wide text-[13px] sm:text-[16px] text-center px-3 sm:px-4">Gut &<br>Immune Balance</span>
           </div>
         </div>
       </div>
@@ -320,19 +328,19 @@
   </section>
 
   <!-- 8. Clinically Researched Ingredients (Redesigned Grid) -->
-  <section class="py-24 bg-sky-50 px-6 border-t border-sky-100">
+  <section class="py-16 sm:py-20 lg:py-24 bg-sky-50 px-4 sm:px-6 border-t border-sky-100">
     <div class="max-w-[1200px] mx-auto">
       <div class="text-center mb-16 max-w-[800px] mx-auto">
         <h2 class="text-indigo-600 font-bold tracking-widest uppercase text-sm mb-2">The Label</h2>
-        <h3 class="text-[32px] sm:text-[40px] font-black text-indigo-950 leading-tight">
+        <h3 class="text-[28px] sm:text-[36px] lg:text-[40px] font-black text-indigo-950 leading-tight">
           Backed by Scientific Research
         </h3>
       </div>
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8">
 
   <!-- Study 1 -->
-  <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-white hover:border-sky-200">
+  <div class="bg-white p-5 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-white hover:border-sky-200">
     <div class="flex items-center space-x-4 mb-6">
       <div class="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600">
         <i data-lucide="shield-check" class="w-7 h-7"></i>
@@ -348,7 +356,7 @@
   </div>
 
   <!-- Study 2 -->
-  <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-white hover:border-sky-200">
+  <div class="bg-white p-5 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-white hover:border-sky-200">
     <div class="flex items-center space-x-4 mb-6">
       <div class="w-14 h-14 bg-sky-50 rounded-2xl flex items-center justify-center text-sky-600">
         <i data-lucide="activity" class="w-7 h-7"></i>
@@ -364,7 +372,7 @@
   </div>
 
   <!-- Study 3 -->
-  <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-white hover:border-sky-200">
+  <div class="bg-white p-5 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-white hover:border-sky-200">
     <div class="flex items-center space-x-4 mb-6">
       <div class="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600">
         <i data-lucide="droplet" class="w-7 h-7"></i>
@@ -380,7 +388,7 @@
   </div>
 
   <!-- Study 4 -->
-  <div class="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-white hover:border-sky-200">
+  <div class="bg-white p-5 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-white hover:border-sky-200">
     <div class="flex items-center space-x-4 mb-6">
       <div class="w-14 h-14 bg-sky-50 rounded-2xl flex items-center justify-center text-sky-600">
         <i data-lucide="flame" class="w-7 h-7"></i>
@@ -399,11 +407,11 @@
   </section>
 
   <!-- 10. Testimonials (Redesigned as Modern Slider) -->
-  <section class="py-24 bg-white overflow-hidden relative">
-    <div class="max-w-[1200px] mx-auto px-6 mb-16 flex justify-between items-end">
+  <section class="py-16 sm:py-20 lg:py-24 bg-white overflow-hidden relative">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 mb-10 sm:mb-16 flex justify-between items-end">
       <div>
         <h2 class="text-sky-600 font-bold tracking-widest uppercase text-sm mb-2">Real Results</h2>
-        <h3 class="text-[32px] sm:text-[40px] font-black text-indigo-950 tracking-tight">From verified Amazon customers</h3>
+        <h3 class="text-[28px] sm:text-[36px] lg:text-[40px] font-black text-indigo-950 tracking-tight">From verified Amazon customers</h3>
       </div>
       <div class="hidden md:flex space-x-3">
         <button id="scroll-left" class="w-12 h-12 rounded-full border-2 border-indigo-100 flex items-center justify-center text-indigo-600 hover:bg-indigo-50 hover:border-indigo-200 transition-all">
@@ -416,10 +424,10 @@
     </div>
       
     <div class="relative max-w-[1400px] mx-auto">
-      <div id="testimonials-container" class="flex gap-8 overflow-x-auto pb-12 snap-x snap-mandatory px-6 md:px-20 hide-scrollbar scroll-smooth">
+      <div id="testimonials-container" class="flex gap-5 sm:gap-8 overflow-x-auto pb-10 sm:pb-12 snap-x snap-mandatory px-4 sm:px-6 md:px-20 hide-scrollbar scroll-smooth">
         
         <!-- Testimonial -->
-        <div class="bg-slate-50 p-10 rounded-3xl min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-sky-500">
+        <div class="bg-slate-50 p-6 sm:p-10 rounded-3xl min-w-[280px] sm:min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-sky-500">
           <div class="flex text-[#fbbf24] mb-6">
             <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
           </div>
@@ -434,7 +442,7 @@
           </div>
         </div>
 
-        <div class="bg-slate-50 p-10 rounded-3xl min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-indigo-600">
+        <div class="bg-slate-50 p-6 sm:p-10 rounded-3xl min-w-[280px] sm:min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-indigo-600">
           <div class="flex text-[#fbbf24] mb-6">
             <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
           </div>
@@ -449,7 +457,7 @@
           </div>
         </div>
 
-        <div class="bg-slate-50 p-10 rounded-3xl min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-sky-500">
+        <div class="bg-slate-50 p-6 sm:p-10 rounded-3xl min-w-[280px] sm:min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-sky-500">
           <div class="flex text-[#fbbf24] mb-6">
             <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
           </div>
@@ -464,7 +472,7 @@
           </div>
         </div>
 
-        <div class="bg-slate-50 p-10 rounded-3xl min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-indigo-600">
+        <div class="bg-slate-50 p-6 sm:p-10 rounded-3xl min-w-[280px] sm:min-w-[340px] max-w-[380px] flex-shrink-0 snap-center flex flex-col border-t-4 border-indigo-600">
           <div class="flex text-[#fbbf24] mb-6">
             <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
           </div>
@@ -484,31 +492,31 @@
   </section>
 
   <!-- 11. Supporting Your Health (Sky Blue Theme) -->
-  <section class="py-24 bg-sky-100 px-6 relative">
-    <div class="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-16 items-center">
+  <section class="py-16 sm:py-20 lg:py-24 bg-sky-100 px-4 sm:px-6 relative">
+    <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-16 items-center">
       
       <div>
-        <h2 class="text-[36px] sm:text-[48px] font-black text-indigo-950 mb-6 leading-tight">
+        <h2 class="text-[30px] sm:text-[40px] lg:text-[48px] font-black text-indigo-950 mb-5 sm:mb-6 leading-tight">
           Supporting Your Health, <span class="text-sky-600">Long-Term.</span>
         </h2>
         
         <div class="space-y-4">
-          <div class="bg-white p-6 rounded-2xl flex items-center shadow-sm">
-            <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 font-black text-xl mr-6">1</div>
+          <div class="bg-white p-4 sm:p-6 rounded-2xl flex items-start sm:items-center shadow-sm">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 font-black text-lg sm:text-xl mr-4 sm:mr-6 flex-shrink-0">1</div>
             <div>
               <h4 class="font-bold text-indigo-950 text-lg">Order Fitnoura today</h4>
               <p class="text-slate-500 text-sm">Take Fitnoura consistently each day to support your gut and immune balance.</p>
             </div>
           </div>
-          <div class="bg-white p-6 rounded-2xl flex items-center shadow-sm">
-            <div class="w-12 h-12 bg-sky-50 rounded-xl flex items-center justify-center text-sky-600 font-black text-xl mr-6">2</div>
+          <div class="bg-white p-4 sm:p-6 rounded-2xl flex items-start sm:items-center shadow-sm">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-sky-50 rounded-xl flex items-center justify-center text-sky-600 font-black text-lg sm:text-xl mr-4 sm:mr-6 flex-shrink-0">2</div>
             <div>
               <h4 class="font-bold text-indigo-950 text-lg">Let Your Body Respond</h4>
               <p class="text-slate-500 text-sm">Lactoferrin works with your body’s natural systems to support balance over time.</p>
             </div>
           </div>
-          <div class="bg-white p-6 rounded-2xl flex items-center shadow-sm">
-            <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 font-black text-xl mr-6">3</div>
+          <div class="bg-white p-4 sm:p-6 rounded-2xl flex items-start sm:items-center shadow-sm">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 font-black text-lg sm:text-xl mr-4 sm:mr-6 flex-shrink-0">3</div>
             <div>
               <h4 class="font-bold text-indigo-950 text-lg">Stay Consistent</h4>
               <p class="text-slate-500 text-sm">Long-term results come from steady, daily use and not quick fixes.</p>
@@ -517,7 +525,7 @@
         </div>
       </div>
 
-<div class="relative h-[600px] rounded-[3rem] overflow-hidden shadow-2xl">
+<div class="relative h-[320px] sm:h-[480px] lg:h-[600px] rounded-[2rem] sm:rounded-[3rem] overflow-hidden shadow-2xl">
 
   <img 
     src="assets/images/Lady-Taking-Capsule.png" 
@@ -532,11 +540,11 @@
   </section>
 
   <!-- 12. Guarantee Section (Dark Variant) -->
-  <section class="py-24 bg-indigo-950 text-white px-6">
-    <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center gap-16">
+  <section class="py-16 sm:py-20 lg:py-24 bg-indigo-950 text-white px-4 sm:px-6">
+    <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center gap-10 sm:gap-16">
       
       <div class="w-full md:w-1/2 relative">
-         <div class="relative h-[500px] rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(14,165,233,0.3)] border-2 border-indigo-800">
+         <div class="relative h-[320px] sm:h-[420px] lg:h-[500px] rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(14,165,233,0.3)] border-2 border-indigo-800">
          <img 
   src="assets/images/Doctor-patient.png" 
   alt="Doctor consulting patient"
@@ -544,16 +552,16 @@
 />
 <div class="absolute inset-0 bg-indigo-900/25"></div>
          </div>
-         <div class="absolute -bottom-8 -right-8 w-[200px] h-[200px] bg-sky-500 rounded-full flex flex-col items-center justify-center p-4 transform rotate-12 shadow-2xl border-8 border-indigo-950">
-            <span class="text-indigo-950 font-black text-3xl uppercase tracking-tighter">95%+</span>
+         <div class="absolute -bottom-5 -right-4 sm:-bottom-8 sm:-right-8 w-[130px] h-[130px] sm:w-[180px] sm:h-[180px] lg:w-[200px] lg:h-[200px] bg-sky-500 rounded-full flex flex-col items-center justify-center p-4 transform rotate-12 shadow-2xl border-4 sm:border-8 border-indigo-950">
+            <span class="text-indigo-950 font-black text-2xl sm:text-3xl uppercase tracking-tighter">95%+</span>
             <span class="text-indigo-950 font-bold uppercase text-sm mt-1">Potency</span>
          </div>
       </div>
 
       <div class="w-full md:w-1/2">
         <h2 class="text-sky-400 font-bold tracking-widest uppercase text-sm mb-4">Our Promise</h2>
-        <h3 class="text-[40px] font-black mb-6 leading-tight">Quality You Can Trust</h3>
-        <p class="text-indigo-200 mb-10 leading-relaxed text-[18px]">
+        <h3 class="text-[32px] sm:text-[40px] font-black mb-5 sm:mb-6 leading-tight">Quality You Can Trust</h3>
+        <p class="text-indigo-200 mb-8 sm:mb-10 leading-relaxed text-base sm:text-[18px]">
           Manufactured in the USA in a certified facility and tested for purity and consistency. FitNoura is designed to deliver reliable, high-quality supplementation you can trust daily.
         </p>
       </div>
@@ -562,7 +570,7 @@
   </section>
 
   <!-- 13. Footer -->
-  <footer class="bg-indigo-950 text-white pt-20 pb-8 px-6">
+  <footer class="bg-indigo-950 text-white pt-14 sm:pt-20 pb-8 px-4 sm:px-6">
     <div class="max-w-[600px] mx-auto flex flex-col items-center text-center mb-12 border-b border-indigo-900 pb-12">
       
       <!-- Logo -->
@@ -588,7 +596,7 @@
       <div class="mb-4 max-w-lg text-center">
         *These statements have not been evaluated by the FDA. These products are not intended to diagnose, treat, cure or prevent any disease.
       </div>
-      <div class="flex space-x-6">
+      <div class="flex flex-col sm:flex-row gap-2 sm:gap-6 text-center">
         <span>© 2026 Fitnoura. All rights reserved.</span>
       </div>
     </div>
